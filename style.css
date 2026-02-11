@@ -255,16 +255,18 @@ ul li {
   color: var(--primary-color);
   margin-bottom: 0.85rem;
 }
+.project p {
+  margin-bottom: 1rem;
+}
 .btn {
   text-align: center;
-  margin-top: 2rem;
-  padding: 0.7rem 0.9rem;
+  padding: 0.7rem 2rem;
   font-size: 1.2rem;
   border: 2px solid var(--primary-color);
   background-color: var(--primary-color);
   color: var(--bg-dark);
-  margin-left: 0.85rem;
   text-decoration: none;
+  margin: auto;
 
   transition: transform 0.3s ease-in;
 }
