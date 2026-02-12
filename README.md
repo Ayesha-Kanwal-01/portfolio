@@ -1,20 +1,21 @@
-# 💼 Personal Portfolio Website
+#  Personal Portfolio Website
 
 A modern, responsive personal portfolio built to showcase my frontend projects and development workflow.
 
 🔗 **Live Demo:** https://ayesha-kanwal-01.github.io/portfolio/
-📂 **Repository:** https://github.com/Ayesha-Kanwal-01/portfolio
+
+ **Repository:** https://github.com/Ayesha-Kanwal-01/portfolio
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This project represents my first complete portfolio website, developed with a structured and professional approach.  
 The focus was on clean UI design, responsive layout architecture, and proper Git version control practices.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - HTML5  
 - CSS3  
@@ -25,7 +26,7 @@ The focus was on clean UI design, responsive layout architecture, and proper Git
 
 ---
 
-## ✨ Features
+##  Features
 
 - Fully responsive (Desktop → Tablet → Mobile)
 - Modern dark theme interface
@@ -35,7 +36,7 @@ The focus was on clean UI design, responsive layout architecture, and proper Git
 
 ---
 
-## 🔁 Development Workflow
+##  Development Workflow
 
 This project was managed using Git to simulate real-world development practices:
 
@@ -46,7 +47,7 @@ This project was managed using Git to simulate real-world development practices:
 
 ---
 
-## 📂 Structure
+##  Structure
 
 portfolio/
 ├── index.html
@@ -59,6 +60,6 @@ portfolio/
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 Developed by **Ayesha Kanwal**
