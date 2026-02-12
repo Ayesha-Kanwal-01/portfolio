@@ -16,7 +16,6 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: var(--bg-dark);
@@ -32,13 +31,11 @@ header {
   padding: 2rem 3.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
-
 header h1 {
   font-weight: 400;
   font-size: 2.5rem;
   color: var(--text-light);
 }
-
 nav {
   display: flex;
   gap: 30px;
@@ -57,6 +54,7 @@ header .menu {
   color: var(--primary-color);
 }
 
+/* ============================= */
 /* Hero Section */
 .hero-section {
   width: 100%;
@@ -66,49 +64,74 @@ header .menu {
   justify-content: center;
   align-items: center;
 }
-
 .hero-text {
   max-width: 600px;
   text-align: left;
   color: var(--text-light);
-  font-size: 1.3rem;
 }
-
+.intro-line {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  transform: translateX(-80px);
+  animation: slideInLeft 1s ease forwards;
+}
 .hero-text h1 {
+  font-size: 2.8rem;
   color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeSlideUp 1s ease forwards 0.3s;
+}
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeSlideUp 1s ease forwards 0.5s;
+}
+.hero-text .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeSlideUp 1s ease forwards 0.7s;
+}
+.hero-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideUp 1s ease forwards 0.9s;
+}
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Hero text animation */
-.hero-text p,
-.hero-text h1,
-.hero-text h2,
-.hero-text a {
-  animation: fadeSlideUp 1s forwards 0.4s;
+/* Animations */
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.hero-btn {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem 1.5rem;
-  font-size: 1.2rem;
-  border: 2px solid var(--primary-color);
-  background-color: var(--primary-color);
-  color: var(--bg-dark);
-  transition: transform 0.3s ease-in;
-}
-.hero-btn:hover {
-  transform: scale(1.1);
 }
 
 /* About Me Section */
@@ -119,12 +142,10 @@ header .menu {
   gap: 3rem;
   padding: 6rem 2rem;
 }
-
 .about-image {
   width: 20%;
   max-width: 300px;
 }
-
 .about-image img {
   width: 100%;
   height: auto;
@@ -136,31 +157,26 @@ header .menu {
     box-shadow 0.3s ease,
     border-color 0.3s ease;
 }
-
 .about-image img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
   border-color: var(--accent-color);
 }
-
 .about-text {
   text-align: center;
   max-width: 600px;
   line-height: 1.7;
 }
-
 .about-text h1 {
   color: var(--accent-color);
   font-size: 2.2rem;
 }
-
 .about-text p {
   max-width: 520px;
   line-height: 1.7;
   opacity: 0.9;
   font-size: 1.2rem;
 }
-
 .about-text p span {
   color: var(--primary-color);
 }
@@ -176,13 +192,11 @@ header .menu {
   margin: 4rem auto;
   max-width: 1100px;
 }
-
 .skill-section h1 {
   color: var(--accent-color);
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
-
 .skill-section ul {
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +204,6 @@ header .menu {
   gap: 1rem;
   margin-top: 2rem;
 }
-
 ul li {
   list-style: none;
   padding: 0.6rem 1.2rem;
@@ -200,7 +213,6 @@ ul li {
   background: rgba(255, 255, 255, 0.02);
   transition: all 0.3s ease;
 }
-
 ul li:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
@@ -214,19 +226,16 @@ ul li:hover {
   margin-bottom: 2.5rem;
   padding: 4rem 1.5rem;
 }
-
 .projects-section h1 {
   color: var(--accent-color);
   font-size: 2.2rem;
 }
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .project {
   padding: 1.5rem;
   border-radius: 16px;
@@ -238,12 +247,10 @@ ul li:hover {
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
-
 .project:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
-
 .project-img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -251,23 +258,19 @@ ul li:hover {
   border-radius: 12px;
   margin-bottom: 1rem;
 }
-
 .project-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .project h2 {
   font-size: 1.3rem;
   color: var(--primary-color);
   margin-bottom: 0.85rem;
 }
-
 .project p {
   margin-bottom: 1rem;
 }
-
 .btn {
   text-align: center;
   padding: 0.7rem 2rem;
@@ -279,7 +282,6 @@ ul li:hover {
   margin: auto;
   transition: transform 0.3s ease-in;
 }
-
 .btn:hover {
   transform: scale(1.1);
 }
@@ -289,18 +291,15 @@ ul li:hover {
   padding: 4rem 1.5rem;
   text-align: center;
 }
-
 .contact-section h1 {
   color: var(--accent-color);
   font-size: 2.3rem;
 }
-
 .contact-subtext {
   margin: 1rem 0 2.5rem;
   color: var(--text-light);
   opacity: 0.8;
 }
-
 .contact-form {
   max-width: 600px;
   margin: auto;
@@ -308,7 +307,6 @@ ul li:hover {
   flex-direction: column;
   gap: 1.2rem;
 }
-
 .contact-form input,
 .contact-form textarea {
   background-color: #111827;
@@ -318,13 +316,11 @@ ul li:hover {
   color: #fff;
   font-family: inherit;
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--accent-color);
 }
-
 .contact-form button {
   margin-top: 1rem;
   padding: 0.9rem;
@@ -335,7 +331,6 @@ ul li:hover {
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-
 .contact-form button:hover {
   transform: translateY(-2px);
 }
@@ -349,17 +344,14 @@ footer {
   padding: 1.5rem 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
-
 footer span {
   font-size: 0.95rem;
   opacity: 0.8;
 }
-
 .footer-links {
   display: flex;
   gap: 1.5rem;
 }
-
 .footer-links a {
   font-size: 0.95rem;
   color: var(--text-light);
@@ -369,14 +361,12 @@ footer span {
     color 0.2s ease,
     opacity 0.2s ease;
 }
-
 .footer-links a:hover {
   color: var(--accent-color);
   opacity: 1;
 }
 
 /* =================== MEDIA QUERIES =================== */
-
 @media (max-width: 1024px) {
   header {
     padding: 1.5rem 3rem;
