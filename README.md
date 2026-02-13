@@ -68,4 +68,6 @@ portfolio/
 └── README.md
 ```
 
+## License
+All Rights Reserved © 2026 Ayesha Kanwal
 
